@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Hundred Colors</title>
+</head>
+<body style="font-family: sans-serif">
+    <div id="app">
+        <input v-model="text"><br><br>
+        <p v-for="n in 100" :style="color(n)">
+                {{ n }} {{ text }}
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="Colors.js"></script>
+</body>
+</html>
